@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+body{
+    height: 100%;
+}
+
+.head{
+    max-width: 768px;
+    margin: auto;
+    text-align: end;
+    margin-top:10px;
+    
+}
+
+button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-regular{
+    color: #B197FC;
+}
+
+.contenedor-info{
+    max-width: 768px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    min-height: 100%;
+    gap: 5%;
+}
+
+.informacion-JL{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.foto{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+.informacion-JL h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.presentacion{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+.resumen button a{
+    display: flex;
+    gap: 10px;
+    color: #B197FC;
+    font-size: 15px ;
+    text-decoration: none;
+}
+
