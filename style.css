@@ -36,6 +36,8 @@ button{
     align-items: center;
     min-height: 100%;
     gap: 5%;
+    padding-bottom: 15px;
+    border-bottom: 2px gray dotted ;
 }
 
 .informacion-JL{
@@ -44,10 +46,13 @@ button{
     justify-content: center;
     padding: 10px;
 }
+
 .foto{
     height: 160px;
     width: 160px;
     border-radius: 50%;
+    border: 7px rgb(231, 227, 227) solid;
+    box-shadow: -5px 5px  10px gray;
 }
 .informacion-JL h1{
     font-size: 30px;
@@ -60,12 +65,98 @@ button{
     margin-bottom: 10px;
 }
 
-
+.resumen{
+    color: #B197FC;
+    display: flex;
+    gap: 10px;
+}
 .resumen button a{
     display: flex;
     gap: 10px;
-    color: #B197FC;
     font-size: 15px ;
     text-decoration: none;
+    
+
 }
+
+.estudio{
+    max-width: 768px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: auto;
+    padding: 20px;
+
+    
+}
+
+.titulo-estudio{
+    max-width: 768px;
+    margin: auto;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+
+  
+}
+.estudio-card{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 350px;
+    height: 340px;
+    border: 1px solid;
+    border-radius:10px;
+    cursor: pointer;
+    transition: hover 0.3s;
+
+}
+
+
+.estudio-card img{
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: transform 0.3s;
+}
+.estudio-card h1{
+    position: absolute;
+    left: 10px;
+}
+
+.cont-text{
+    display: none;
+    opacity: 0;
+    font-weight: 150;
+
+}
+.ocultar{
+    display: none;
+}
+
+
+/*hovers*/
+.estudio-card:hover h1{
+    top: 20px;
+}
+
+.estudio-card:hover .cont-text{
+    padding: 10px;
+    padding-top: 40px;
+    display: block;
+    position: absolute;
+    opacity: 1;
+
+
+}
+
+.estudio-card:hover img{
+    transform: scale(1,2);    
+}
+
 
